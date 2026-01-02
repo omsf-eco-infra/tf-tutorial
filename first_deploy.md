@@ -202,6 +202,7 @@ bucket_name = "this-is-the-bucket-name-abc123"
 ```
 
 We see the information about the bucket, as well as the output we defined.
+The bucket information includes things that the plan said would be "known after apply," as well as several parameters where we used default values.
 
 You can also log into the AWS console and verify that the bucket was created, or check using the `aws` CLI command `aws s3 ls`.
 
