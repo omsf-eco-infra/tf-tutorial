@@ -67,7 +67,8 @@ case, we only need the AWS provider. The `variables.tf` section lists the input
 variables that users need to provide. We'll talk more about ways of setting
 these variables later. The `main.tf` section is the actual resource
 configuration. Finally, the `outputs.tf` section defines outputs that we may
-want to get from this later.
+want to get from this later. For more information on syntax of the Terraform
+code, see our [HCL syntax overview](hcl_syntax_overview.md).
 
 ### Deploying your bucket configuration
 
