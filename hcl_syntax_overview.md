@@ -84,5 +84,24 @@ tags = {
 }
 ```
 
+## Functions
+
+HCL also supports functions.
+Some functions are built into the language and others are supplied by the provider.
+The syntax for functions looks like `function(arg1, arg2)`.
+For example, the built in function `upper` will return the upper-cased string provided as an argument:
+
+```HCL
+uppercase_name = upper("mike")
+```
+
+Provider supplied functions require the provider name and look like this:
+
+```HCL
+provider::terraform::encode_tfvars({
+  example = "Hello!"
+})
+```
+
 This completes a general overview of HCL syntax.
 To learn more about the language, the [Terraform Language Documentation](https://developer.hashicorp.com/terraform/language) is a good resource.
