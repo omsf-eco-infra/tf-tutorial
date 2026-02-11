@@ -26,7 +26,10 @@ resource "aws_instance" "web" {
 Blocks have a type, label(s) and a body enclosed in braces.
 In the example above `resource` is a type, `"aws_instance"` and `"web"` are labels.
 The block type defines how many labels are required.
-In this example (when working with the AWS provider) the `resource` type requires two labels.
+Blocks have a block type, zero or more block labels, and a body enclosed in braces.
+In the example above `resource` is the block type, `"aws_instance"` and `"web"` are block labels.
+The block type defines how many labels are required.
+In this example (which uses the AWS provider) the `resource` block type requires two block labels.
 
 ## Comments
 
